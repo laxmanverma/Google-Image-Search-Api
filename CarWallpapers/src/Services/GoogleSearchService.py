@@ -1,10 +1,11 @@
 import CarWallpapers.src.Helper.htmlContent as htmlContent
 import CarWallpapers.src.ResponsePreparator.GoogleSearchResponsePreparator as googleSearchResponsePreparator
+import CarWallpapers.src.Constants.Constants as constants
 
 def getUrl(SEARCH_NAME):
      SEARCH_NAME +=" wallpaper 1080x1920"
      SEARCH_NAME = SEARCH_NAME.replace(' ','+')
-     SEARCH_URL = "https://www.google.co.in/search?q={}&newwindow=1&sa=X&tbm=isch&tbo=u&source=univ&ved=0ahUKEwjImLTS_7bbAhWMr48KHSsoCDkQsAQIJw&biw=1301&bih=653".format(SEARCH_NAME)
+     SEARCH_URL = constants.Constants.GOOGLE_SEARCH_API_URL.format(SEARCH_NAME)
      print(SEARCH_URL)
      return SEARCH_URL
 
