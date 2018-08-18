@@ -1,6 +1,6 @@
-import CarWallpapers.src.Helper.htmlContent as htmlContent
-import CarWallpapers.src.ResponsePreparator.GoogleSearchResponsePreparator as googleSearchResponsePreparator
-import CarWallpapers.src.Constants.Constants as constants
+import Wallpapers.src.Helper.htmlContent as htmlContent
+import Wallpapers.src.ResponsePreparator.GoogleSearchResponsePreparator as googleSearchResponsePreparator
+import Wallpapers.src.Constants.Constants as constants
 
 def getUrl(SEARCH_NAME):
      SEARCH_NAME +=" wallpaper 1080x1920"

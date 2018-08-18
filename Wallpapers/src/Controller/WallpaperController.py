@@ -1,6 +1,6 @@
 import json
 from django.http import HttpResponse
-import CarWallpapers.src.Services.GoogleSearchService as googleSearchService
+import Wallpapers.src.Services.GoogleSearchService as googleSearchService
 
 def googleSearch(request):
     KEY_WORD = request.GET.get('KEY_WORD', '')
